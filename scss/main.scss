@@ -1,0 +1,79 @@
+* {
+  }
+body {
+	background: black;
+}
+#intro {
+	position: relative;
+	z-index: 2;
+	height: 100vh;
+	display: table;
+	width: 100%;
+  		text-align: center;
+	h1 {
+		font-size: 100px;
+		font-family: "nimbus-sans-condensed",sans-serif;
+		color: white;
+		margin:0 auto;
+		text-transform: uppercase;
+		width: 100%;
+	}
+	.who {
+		color: white;
+		font-size: 16px;
+  		cursor: pointer;
+  		font-family: "aktiv-grotesk-std",sans-serif;
+  		text-transform: uppercase;
+  		font-weight:500;
+  		letter-spacing: 3px;
+	}
+	.cont {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.bg {
+	position: fixed;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	background-size: cover;
+	background-position: center;
+	opacity: .5;
+}
+ul {
+	list-style-type: none;
+	margin: none;
+	padding: none;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+a, a:hover, a:visited {
+	color: white;
+	text-decoration: none;
+}
+li {
+	margin:70px 0;
+	color: white;
+	.title {
+		font-size: 80px;
+  		font-family: "nimbus-sans-condensed",sans-serif;
+  		display: block;
+  		text-transform: uppercase;
+  		line-height: 60px;
+  		letter-spacing: 2px;
+  		cursor: pointer;
+  		font-weight: 900;
+	}
+	.artist {
+		font-size: 14px;
+  		cursor: pointer;
+  		font-family: "aktiv-grotesk-std",sans-serif;
+  		text-transform: uppercase;
+  		font-weight:300;
+  		letter-spacing: 3px;
+	}
+}

@@ -3,167 +3,73 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Fifty Perfect Beats</title>
+    <script src="//use.typekit.net/qpa3hgk.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="css/app.css" />
+
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+    <div class="bg"></div>
+    <div id="intro">
+      <div class="cont">
+        <h1>Fifty Perfect Beats</h1>
+        <span class="who">Curated by @fosta and @theearlcarlson</span>
       </div>
     </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div>
-
+    <ul>
+      <li data-artist="tribe"><a href="#"><span class="title">Buggin' Out </span> <span class="artist"> A Tribe Called Quest</span></a></li>
+      <li data-artist="asap"><a href="#"><span class="title">Goldie </span> <span class="artist"> A$AP Rocky</span></a></li>
+      <li data-artist="afrika"><a href="#"><span class="title">Planet Rock </span> <span class="artist"> Afrika Bambaataa, Soul Sonic Force</span></a></li>
+      <li data-artist="audio"><a href="#"><span class="title">Top Billin' </span> <span class="artist"> Audio Two</span></a></li>
+      <li data-artist="beastie"><a href="#"><span class="title">Root Down </span> <span class="artist"> Beastie Boys</span></a></li>
+      <li data-artist="biz"><a href="#"><span class="title">Just A Friend </span> <span class="artist"> Biz Markie</span></a></li>
+      <li data-artist="black"><a href="#"><span class="title">The Choice Is Yours </span> <span class="artist"> Black Sheep</span></a></li>
+      <li data-artist="brother"><a href="#"><span class="title">Shadows On The Sun </span> <span class="artist"> Brother Ali</span></a></li>
+      <li data-artist="capone"><a href="#"><span class="title">Invincible </span> <span class="artist"> Capone-N-Noreaga</span></a></li>
+      <li data-artist="common"><a href="#"><span class="title">The Light </span> <span class="artist"> Common</span></a></li>
+      <li data-artist="danny"><a href="#"><span class="title">Grown Up </span> <span class="artist"> Danny Brown</span></a></li>
+      <li data-artist="dela"><a href="#"><span class="title">Me, Myself &amp; I </span> <span class="artist"> De La Soul</span></a></li>
+      <li data-artist="dead"><a href="#"><span class="title">Hip Hop </span> <span class="artist"> Dead Prez</span></a></li>
+      <li data-artist="dizzee"><a href="#"><span class="title">I Luv U </span> <span class="artist"> Dizzee Rascal</span></a></li>
+      <li data-artist="dresnoop"><a href="#"><span class="title">Still D.R.E. </span> <span class="artist"> Dr. Dre, Snoop Dogg</span></a></li>
+      <li data-artist="eminem"><a href="#"><span class="title">My Name Is </span> <span class="artist"> Eminem</span></a></li>
+      <li data-artist="fugees"><a href="#"><span class="title">Ready or Not </span> <span class="artist"> Fugees</span></a></li>
+      <li data-artist="ghostface"><a href="#"><span class="title">Whip You With A Strap </span> <span class="artist"> Ghostface Killah</span></a></li>
+      <li data-artist="hiero"><a href="#"><span class="title">At the Helm </span> <span class="artist"> Hieroglyphics</span></a></li>
+      <li data-artist="icecube"><a href="#"><span class="title">It Was A Good Day </span> <span class="artist"> Ice Cube</span></a></li>
+      <li data-artist="jdilla"><a href="#"><span class="title">The $ </span> <span class="artist"> J Dilla</span></a></li>
+      <li data-artist="jayzkanye"><a href="#"><span class="title">Niggas In Paris </span> <span class="artist"> JAY Z, Kanye West</span></a></li>
+      <li data-artist="jaylib"><a href="#"><span class="title">The Red </span> <span class="artist"> Jaylib</span></a></li>
+      <li data-artist="jeru"><a href="#"><span class="title">Ya Playin' Yaself </span> <span class="artist"> Jeru The Damaja</span></a></li>
+      <li data-artist="kanye"><a href="#"><span class="title">Through The Wire </span> <span class="artist"> Kanye West</span></a></li>
+      <li data-artist="king"><a href="#"><span class="title">Next Levels </span> <span class="artist"> King Geedorah</span></a></li>
+      <li data-artist="kmd"><a href="#"><span class="title">Peachfuzz </span> <span class="artist"> KMD</span></a></li>
+      <li data-artist="mop"><a href="#"><span class="title">Ante Up </span> <span class="artist"> M.O.P.</span></a></li>
+      <li data-artist="madvillain"><a href="#"><span class="title">Accordian </span> <span class="artist"> Madvillain</span></a></li>
+      <li data-artist="missy"><a href="#"><span class="title">Work It - Promo </span> <span class="artist"> Missy Elliott</span></a></li>
+      <li data-artist="mobb"><a href="#"><span class="title">Shook Ones, Pt. II </span> <span class="artist"> Mobb Deep</span></a></li>
+      <li data-artist="mos"><a href="#"><span class="title">Ms. Fat Booty </span> <span class="artist"> Mos Def</span></a></li>
+      <li data-artist="nas"><a href="#"><span class="title">N.Y. State of Mind </span> <span class="artist"> Nas</span></a></li>
+      <li data-artist="naughty"><a href="#"><span class="title">O.P.P </span> <span class="artist"> Naughty By Nature</span></a></li>
+      <li data-artist="notorious"><a href="#"><span class="title">Mo Money Mo Problems </span> <span class="artist"> The Notorious B.I.G., Mase, Diddy</span></a></li>
+      <li data-artist="people"><a href="#"><span class="title">Hang Loose </span> <span class="artist"> People Under The Stairs</span></a></li>
+      <li data-artist="pharcyde"><a href="#"><span class="title">Passin' Me By </span> <span class="artist"> The Pharcyde</span></a></li>
+      <li data-artist="pharoahe"><a href="#"><span class="title">Simon Says </span> <span class="artist"> Pharoahe Monch</span></a></li>
+      <li data-artist="pusha"><a href="#"><span class="title">Numbers On The Boards </span> <span class="artist"> Pusha T</span></a></li>
+      <li data-artist="qtip"><a href="#"><span class="title">Let's Ride </span> <span class="artist"> Q-Tip</span></a></li>
+      <li data-artist="quasimoto"><a href="#"><span class="title">Low Class Conspiracy </span> <span class="artist"> Quasimoto</span></a></li>
+      <li data-artist="roots"><a href="#"><span class="title">Witness </span> <span class="artist"> Roots Manuva</span></a></li>
+      <li data-artist="run"><a href="#"><span class="title">It's Like That </span> <span class="artist"> RUN-DMC</span></a></li>
+      <li data-artist="slum"><a href="#"><span class="title">Fall in Love </span> <span class="artist"> Slum Village</span></a></li>
+      <li data-artist="souls"><a href="#"><span class="title">93 'Til Infinity </span> <span class="artist"> Souls Of Mischief</span></a></li>
+      <li data-artist="sugar"><a href="#"><span class="title">Apache </span> <span class="artist"> The Sugarhill Gang</span></a></li>
+      <li data-artist="tyler"><a href="#"><span class="title">Sandwitches </span> <span class="artist"> Tyler, The Creator, Hodgy Beats</span></a></li>
+      <li data-artist="warren"><a href="#"><span class="title">Regulate </span> <span class="artist"> Warren G, Nate Dogg</span></a></li>
+      <li data-artist="wiley"><a href="#"><span class="title">Wot Do U Call It? </span> <span class="artist"> Wiley</span></a></li>
+      <li data-artist="wu"><a href="#"><span class="title">C.R.E.A.M. </span> <span class="artist"> Wu-Tang Clan</span></a></li>
+    </ul>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
