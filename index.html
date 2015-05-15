@@ -1,92 +1,132 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta name="twitter:card" content="Fifty Perfect Beats by @fosta and @theearlcarlson">
+<meta name="twitter:site" content="Fifty Perfect Beats">
+<meta name="twitter:title" content="Fifty Perfect Beats by @fosta and @theearlcarlson">
+<meta name="twitter:description" content="Fifty Perfect Beats hand crafted and hand chosen">
+
+<meta name="og:title" content="Fifty Perfect Beats">
+<meta name="og:description" content="Fifty Perfect Beats by Nick Foster and Earl Carlson">
+<meta name="og:site_name" content="Fifty Perfect Beats">
+
+<meta property="og:image" content='http://fiftyperfectbeats.com/images/asap.jpg'>
+    
     <title>Fifty Perfect Beats</title>
     <script src="//use.typekit.net/qpa3hgk.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="/bower_components/loaders.css/loaders.min.css" />
 
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="bg"></div>
+    <ul class="bg active">
+      
+    </ul>
+    <ul class="bg2">
+      
+    </ul>
     <div id="down" class="animated fadeIn">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
       <polygon points="100,32.562 84.93,17.535 50,52.381 15.072,17.535 0,32.561 50,82.465 "/>
       </svg>
     </div>
     <div id="nav">
-      <ul class="links">
+      <!-- <ul class="links">
         <li><a href="#">Fifty Perfect Beats</a></li>
-      </ul>
+      </ul> -->
       <ul class="plays">
-        <li><a href="#">Spotify</a></li>
-        <li><a href="#">About</a></li>
+        <!-- <li><a href="#">Spotify</a></li> -->
+        <li><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div></li>
+        <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="Fifty Perfect Beats by @fosta and @theearlcarlson">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
       </ul>
+
     </div>
     <div id="intro">
       <div class="cont">
         <h1>Fifty Perfect Beats</h1>
-        <p class="who">Curated by @fosta and @theearlcarlson</p>
-        <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Afosta%3Aplaylist%3A7jIHlRjdYklh9wJzP4dwgE" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+        <p class="who">Curated by <a href="http://twitter.com/fosta" target="_blank">@fosta</a> and <a href="http://twitter.com/theearlcarlson" target="_blank">@theearlcarlson</a></p>
+        <iframe id="spotify" src="https://embed.spotify.com/?uri=spotify%3Auser%3Afosta%3Aplaylist%3A7jIHlRjdYklh9wJzP4dwgE" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+         <div class="loader-inner line-scale-party"><div></div><div></div><div></div><div></div></div>
       </div>
     </div>
     <ul class="artists">
-      <li data-artist="tribe"><a href="#"><span class="title">Buggin' Out </span> <span class="artist"> A Tribe Called Quest</span></a></li>
-      <li data-artist="asap"><a href="#"><span class="title">Goldie </span> <span class="artist"> A$AP Rocky</span></a></li>
-      <li data-artist="afrika"><a href="#"><span class="title">Planet Rock </span> <span class="artist"> Afrika Bambaataa, Soul Sonic Force</span></a></li>
-      <li data-artist="audio"><a href="#"><span class="title">Top Billin' </span> <span class="artist"> Audio Two</span></a></li>
-      <li data-artist="beastie"><a href="#"><span class="title">Root Down </span> <span class="artist"> Beastie Boys</span></a></li>
-      <li data-artist="biz"><a href="#"><span class="title">Just A Friend </span> <span class="artist"> Biz Markie</span></a></li>
-      <li data-artist="black"><a href="#"><span class="title">The Choice Is Yours </span> <span class="artist"> Black Sheep</span></a></li>
-      <li data-artist="brother"><a href="#"><span class="title">Shadows On The Sun </span> <span class="artist"> Brother Ali</span></a></li>
-      <li data-artist="capone"><a href="#"><span class="title">Invincible </span> <span class="artist"> Capone-N-Noreaga</span></a></li>
-      <li data-artist="common"><a href="#"><span class="title">The Light </span> <span class="artist"> Common</span></a></li>
-      <li data-artist="danny"><a href="#"><span class="title">Grown Up </span> <span class="artist"> Danny Brown</span></a></li>
-      <li data-artist="dela"><a href="#"><span class="title">Me, Myself &amp; I </span> <span class="artist"> De La Soul</span></a></li>
-      <li data-artist="dead"><a href="#"><span class="title">Hip Hop </span> <span class="artist"> Dead Prez</span></a></li>
-      <li data-artist="dizzee"><a href="#"><span class="title">I Luv U </span> <span class="artist"> Dizzee Rascal</span></a></li>
-      <li data-artist="dresnoop"><a href="#"><span class="title">Still D.R.E. </span> <span class="artist"> Dr. Dre, Snoop Dogg</span></a></li>
-      <li data-artist="eminem"><a href="#"><span class="title">My Name Is </span> <span class="artist"> Eminem</span></a></li>
-      <li data-artist="fugees"><a href="#"><span class="title">Ready or Not </span> <span class="artist"> Fugees</span></a></li>
-      <li data-artist="ghostface"><a href="#"><span class="title">Whip You With A Strap </span> <span class="artist"> Ghostface Killah</span></a></li>
-      <li data-artist="hiero"><a href="#"><span class="title">At the Helm </span> <span class="artist"> Hieroglyphics</span></a></li>
-      <li data-artist="icecube"><a href="#"><span class="title">It Was A Good Day </span> <span class="artist"> Ice Cube</span></a></li>
-      <li data-artist="jdilla"><a href="#"><span class="title">The $ </span> <span class="artist"> J Dilla</span></a></li>
-      <li data-artist="jayzkanye"><a href="#"><span class="title">Niggas In Paris </span> <span class="artist"> JAY Z, Kanye West</span></a></li>
-      <li data-artist="jaylib"><a href="#"><span class="title">The Red </span> <span class="artist"> Jaylib</span></a></li>
-      <li data-artist="jeru"><a href="#"><span class="title">Ya Playin' Yaself </span> <span class="artist"> Jeru The Damaja</span></a></li>
-      <li data-artist="kanye"><a href="#"><span class="title">Through The Wire </span> <span class="artist"> Kanye West</span></a></li>
-      <li data-artist="king"><a href="#"><span class="title">Next Levels </span> <span class="artist"> King Geedorah</span></a></li>
-      <li data-artist="kmd"><a href="#"><span class="title">Peachfuzz </span> <span class="artist"> KMD</span></a></li>
-      <li data-artist="mop"><a href="#"><span class="title">Ante Up </span> <span class="artist"> M.O.P.</span></a></li>
-      <li data-artist="madvillain"><a href="#"><span class="title">Accordian </span> <span class="artist"> Madvillain</span></a></li>
-      <li data-artist="missy"><a href="#"><span class="title">Work It - Promo </span> <span class="artist"> Missy Elliott</span></a></li>
-      <li data-artist="mobb"><a href="#"><span class="title">Shook Ones, Pt. II </span> <span class="artist"> Mobb Deep</span></a></li>
-      <li data-artist="mos"><a href="#"><span class="title">Ms. Fat Booty </span> <span class="artist"> Mos Def</span></a></li>
-      <li data-artist="nas"><a href="#"><span class="title">N.Y. State of Mind </span> <span class="artist"> Nas</span></a></li>
-      <li data-artist="naughty"><a href="#"><span class="title">O.P.P </span> <span class="artist"> Naughty By Nature</span></a></li>
-      <li data-artist="notorious"><a href="#"><span class="title">Mo Money Mo Problems </span> <span class="artist"> The Notorious B.I.G., Mase, Diddy</span></a></li>
-      <li data-artist="people"><a href="#"><span class="title">Hang Loose </span> <span class="artist"> People Under The Stairs</span></a></li>
-      <li data-artist="pharcyde"><a href="#"><span class="title">Passin' Me By </span> <span class="artist"> The Pharcyde</span></a></li>
-      <li data-artist="pharoahe"><a href="#"><span class="title">Simon Says </span> <span class="artist"> Pharoahe Monch</span></a></li>
-      <li data-artist="pusha"><a href="#"><span class="title">Numbers On The Boards </span> <span class="artist"> Pusha T</span></a></li>
-      <li data-artist="qtip"><a href="#"><span class="title">Let's Ride </span> <span class="artist"> Q-Tip</span></a></li>
-      <li data-artist="quasimoto"><a href="#"><span class="title">Low Class Conspiracy </span> <span class="artist"> Quasimoto</span></a></li>
-      <li data-artist="roots"><a href="#"><span class="title">Witness </span> <span class="artist"> Roots Manuva</span></a></li>
-      <li data-artist="run"><a href="#"><span class="title">It's Like That </span> <span class="artist"> RUN-DMC</span></a></li>
-      <li data-artist="slum"><a href="#"><span class="title">Fall in Love </span> <span class="artist"> Slum Village</span></a></li>
-      <li data-artist="souls"><a href="#"><span class="title">93 'Til Infinity </span> <span class="artist"> Souls Of Mischief</span></a></li>
-      <li data-artist="sugar"><a href="#"><span class="title">Apache </span> <span class="artist"> The Sugarhill Gang</span></a></li>
-      <li data-artist="tyler"><a href="#"><span class="title">Sandwitches </span> <span class="artist"> Tyler, The Creator, Hodgy Beats</span></a></li>
-      <li data-artist="warren"><a href="#"><span class="title">Regulate </span> <span class="artist"> Warren G, Nate Dogg</span></a></li>
-      <li data-artist="wiley"><a href="#"><span class="title">Wot Do U Call It? </span> <span class="artist"> Wiley</span></a></li>
-      <li data-artist="wu"><a href="#"><span class="title">C.R.E.A.M. </span> <span class="artist"> Wu-Tang Clan</span></a></li>
+      <li data-artist="tribe"><span class="title">Buggin' Out </span> <span class="artist"> A Tribe Called Quest</span></li>
+      <li data-artist="asap"><span class="title">Goldie </span> <span class="artist"> A$AP Rocky</span></li>
+      <li data-artist="afrika"><span class="title">Planet Rock </span> <span class="artist"> Afrika Bambaataa, Soul Sonic Force</span></li>
+      <li data-artist="audio"><span class="title">Top Billin' </span> <span class="artist"> Audio Two</span></li>
+      <li data-artist="beastie"><span class="title">Root Down </span> <span class="artist"> Beastie Boys</span></li>
+      <li data-artist="biz"><span class="title">Just A Friend </span> <span class="artist"> Biz Markie</span></li>
+      <li data-artist="black"><span class="title">The Choice Is Yours </span> <span class="artist"> Black Sheep</span></li>
+      <li data-artist="brother"><span class="title">Shadows On The Sun </span> <span class="artist"> Brother Ali</span></li>
+      <li data-artist="capone"><span class="title">Invincible </span> <span class="artist"> Capone-N-Noreaga</span></li>
+      <li data-artist="common"><span class="title">The Light </span> <span class="artist"> Common</span></li>
+      <li data-artist="danny"><span class="title">Grown Up </span> <span class="artist"> Danny Brown</span></li>
+      <li data-artist="dela"><span class="title">Me, Myself &amp; I </span> <span class="artist"> De La Soul</span></li>
+      <li data-artist="dead"><span class="title">Hip Hop </span> <span class="artist"> Dead Prez</span></li>
+      <li data-artist="dizzee"><span class="title">I Luv U </span> <span class="artist"> Dizzee Rascal</span></li>
+      <li data-artist="dresnoop"><span class="title">Still D.R.E. </span> <span class="artist"> Dr. Dre, Snoop Dogg</span></li>
+      <li data-artist="eminem"><span class="title">My Name Is </span> <span class="artist"> Eminem</span></li>
+      <li data-artist="fugees"><span class="title">Ready or Not </span> <span class="artist"> Fugees</span></li>
+      <li data-artist="ghostface"><span class="title">Whip You With A Strap </span> <span class="artist"> Ghostface Killah</span></li>
+      <li data-artist="hiero"><span class="title">At the Helm </span> <span class="artist"> Hieroglyphics</span></li>
+      <li data-artist="icecube"><span class="title">It Was A Good Day </span> <span class="artist"> Ice Cube</span></li>
+      <li data-artist="jdilla"><span class="title">The $ </span> <span class="artist"> J Dilla</span></li>
+      <li data-artist="jayzkanye"><span class="title">Niggas In Paris </span> <span class="artist"> JAY Z, Kanye West</span></li>
+      <li data-artist="jaylib"><span class="title">The Red </span> <span class="artist"> Jaylib</span></li>
+      <li data-artist="jeru"><span class="title">Ya Playin' Yaself </span> <span class="artist"> Jeru The Damaja</span></li>
+      <li data-artist="kanye"><span class="title">Through The Wire </span> <span class="artist"> Kanye West</span></li>
+      <li data-artist="king"><span class="title">Next Levels </span> <span class="artist"> King Geedorah</span></li>
+      <li data-artist="kmd"><span class="title">Peachfuzz </span> <span class="artist"> KMD</span></li>
+      <li data-artist="mop"><span class="title">Ante Up </span> <span class="artist"> M.O.P.</span></li>
+      <li data-artist="madvillain"><span class="title">Accordian </span> <span class="artist"> Madvillain</span></li>
+      <li data-artist="missy"><span class="title">Work It - Promo </span> <span class="artist"> Missy Elliott</span></li>
+      <li data-artist="mobb"><span class="title">Shook Ones, Pt. II </span> <span class="artist"> Mobb Deep</span></li>
+      <li data-artist="mos"><span class="title">Ms. Fat Booty </span> <span class="artist"> Mos Def</span></li>
+      <li data-artist="nas"><span class="title">N.Y. State of Mind </span> <span class="artist"> Nas</span></li>
+      <li data-artist="naughty"><span class="title">O.P.P </span> <span class="artist"> Naughty By Nature</span></li>
+      <li data-artist="notorious"><span class="title">Mo Money Mo Problems </span> <span class="artist"> The Notorious B.I.G., Mase, Diddy</span></li>
+      <li data-artist="people"><span class="title">Hang Loose </span> <span class="artist"> People Under The Stairs</span></li>
+      <li data-artist="pharcyde"><span class="title">Passin' Me By </span> <span class="artist"> The Pharcyde</span></li>
+      <li data-artist="pharoahe"><span class="title">Simon Says </span> <span class="artist"> Pharoahe Monch</span></li>
+      <li data-artist="pusha"><span class="title">Numbers On The Boards </span> <span class="artist"> Pusha T</span></li>
+      <li data-artist="qtip"><span class="title">Let's Ride </span> <span class="artist"> Q-Tip</span></li>
+      <li data-artist="quasimoto"><span class="title">Low Class Conspiracy </span> <span class="artist"> Quasimoto</span></li>
+      <li data-artist="roots"><span class="title">Witness </span> <span class="artist"> Roots Manuva</span></li>
+      <li data-artist="run"><span class="title">It's Like That </span> <span class="artist"> RUN-DMC</span></li>
+      <li data-artist="slum"><span class="title">Fall in Love </span> <span class="artist"> Slum Village</span></li>
+      <li data-artist="souls"><span class="title">93 'Til Infinity </span> <span class="artist"> Souls Of Mischief</span></li>
+      <li data-artist="sugar"><span class="title">Apache </span> <span class="artist"> The Sugarhill Gang</span></li>
+      <li data-artist="tyler"><span class="title">Sandwitches </span> <span class="artist"> Tyler, The Creator, Hodgy Beats</span></li>
+      <li data-artist="warren"><span class="title">Regulate </span> <span class="artist"> Warren G, Nate Dogg</span></li>
+      <li data-artist="wiley"><span class="title">Wot Do U Call It? </span> <span class="artist"> Wiley</span></li>
+      <li data-artist="wu"><span class="title">C.R.E.A.M. </span> <span class="artist"> Wu-Tang Clan</span></li>
     </ul>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/bower_components/waitForImages/dist/jquery.waitforimages.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30476715-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>

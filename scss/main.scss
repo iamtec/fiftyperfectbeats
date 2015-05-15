@@ -42,13 +42,38 @@ body {
     -webkit-animation-name: fadeIn; 
     animation-name: fadeIn; 
 }
+body {
+	margin: 0;
+	padding: 0;
+}
 #intro {
 	position: relative;
-	z-index: 2;
+	z-index: 5;
 	height: 100vh;
 	display: table;
 	width: 100%;
-  		text-align: center;
+	text-align: center;
+
+
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    background: black;
+    #spotify {
+    	opacity: 0;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    }
+    &.loaded {
+    	background:none;
+    	
+    	#spotify {
+    		opacity: 1;
+    	}
+    }
 	h1 {
 		font-size: 100px;
 		font-family: "nimbus-sans-condensed",sans-serif;
@@ -66,40 +91,84 @@ body {
   		text-transform: uppercase;
   		font-weight:500;
   		letter-spacing: 3px;
+  		margin-top:-7px;
 	}
 	.cont {
 		display: table-cell;
 		vertical-align: middle;
 	}
 }
-.bg {
-	position: fixed;
-	top:0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	z-index: 1;
-	background-size: cover;
-	background-position: center;
-	opacity: .5;
+.bg, .bg2 {
+	display: none;
+}
 
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
+@media screen and  (min-width: 700px) {
+	.bg {
+		position: fixed;
+		bottom:50px;
+		right: 0;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		display: block;
+		background-position: center;
+		opacity: 0;
+		padding: 0;
+		margin: 0;
+		line-height: 2vh;
+		text-indent: -999px;
+	    -webkit-transition: all 500ms ease-out;
+	    -moz-transition: all 500ms ease-out;
+	    -o-transition: all 500ms ease-out;
+	    transition: all 500ms ease-out;
+	    &.active {
+
+			opacity: .3;
+	    }
+	    li {
+			background-size: cover;
+	    	background-position: center;
+	    }
+	}
+	.bg2 {
+		z-index: 1;
+		opacity: .5;
+		padding: 0;
+		margin: 0;
+		display: block;
+		text-indent: -999px;
+	    li {
+			background-size: cover;
+			background-position: center;
+			position: fixed;
+			top:0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+		    -webkit-transition: all 500ms ease-out;
+		    -moz-transition: all 500ms ease-out;
+		    -o-transition: all 500ms ease-out;
+		    transition: all 500ms ease-out;
+		    opacity: 0;
+		    &.active {
+		    	opacity: 1;
+		    }
+	    }
+	}
 }
 #nav {
 	position: fixed;
 	z-index: 3;
 	background: rgba(0,0,0,1);
-	top:0;
+	bottom:0;
+	left:0;	
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	* {
-	    -webkit-transition: all 500ms ease-out;
-	    -moz-transition: all 500ms ease-out;
-	    -o-transition: all 500ms ease-out;
-	    transition: all 500ms ease-out;
+	    // -webkit-transition: all 500ms ease-out;
+	    // -moz-transition: all 500ms ease-out;
+	    // -o-transition: all 500ms ease-out;
+	    // transition: all 500ms ease-out;
 	}
 	&:hover {
 		//background: rgba(0,0,0,.5);
@@ -108,9 +177,10 @@ body {
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
-		position: fixed;
+		position: relative;
 		top:7px;
 		z-index: 2;
+		text-align: center;
 		li {
 			display: inline-block;
 			margin:0 10px;
@@ -133,7 +203,9 @@ body {
 		left:5px;
 	}
 	.plays {
-		right: 5px;
+		li {
+			display: inline-block;
+		}
 	}
 }
 .artists {
@@ -144,6 +216,7 @@ body {
 	text-align: center;
 	position: relative;
 	z-index: 2;
+	margin-bottom: 50vh;
 }
 a, a:hover, a:visited {
 	color: white;
@@ -153,6 +226,7 @@ a, a:hover, a:visited {
 	padding:70px 0;
 	color: white;
 	opacity: .5;
+	 word-break: break-word;
 
 	&:hover {
 		opacity: 1;
@@ -164,15 +238,34 @@ a, a:hover, a:visited {
   		text-transform: uppercase;
   		line-height: 90px;
   		letter-spacing: 2px;
-  		cursor: pointer;
   		font-weight: 900;
 	}
 	.artist {
 		font-size: 14px;
-  		cursor: pointer;
   		font-family: "anonymous-pro",sans-serif;
   		text-transform: uppercase;
   		font-weight:300;
   		letter-spacing: 3px;
 	}
+}
+.fb-share-button span {
+	vertical-align: middle !important;
+	margin-top:-5px;
+}
+
+#loader {
+	position: fixed;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: black;
+	z-index: 5;
+}
+.loader-inner{
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top:40px;
+	margin-left:-21px;
 }
